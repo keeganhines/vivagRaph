@@ -1,0 +1,13 @@
+dependencies:
+  - name: vivagraph
+    version: 0.5.8
+    src: htmlwidgets/lib/vivagraph
+    script: vivagraph.min.js
+    
+  - name: jquery
+    version: 2.1.1
+    src: htmlwidgets/lib/jquery
+    script: jquery.min.js
+
+
+
