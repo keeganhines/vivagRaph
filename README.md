@@ -3,13 +3,13 @@ vivagRaph
 
 R package for interactive network plots using VivaGraph js. Built with `htmlwidgets`.  
 
-**Desired Use**
+**Example Use**
 
 ```
-Nodes=data.frame(nodeName=c('Bill','Ted'),group=c(1,1))
-Edges=data.frame(source=0,target=1,value=1)
+Nodes = data.frame(c('A','B','C','D'),group=c(1,1,1,1))
+Edges = data.frame(source=c(0,1,0,2),target=c(1,2,2,3))
 
-vivagRaph(nodes=Nodes,edges=Edges,options='')
+vivagRaph(nodes=Nodes,edges=Edges)
 ```
 
-**Note: Currently broken**
+

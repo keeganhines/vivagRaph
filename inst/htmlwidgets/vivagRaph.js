@@ -14,7 +14,21 @@ HTMLWidgets.widget({
 
   	var graph= Viva.Graph.graph();
   	
-  	graph.addLink(1,2);
+  	var networkData={
+  		nodes: JSON.parse(x.nodes),
+  		links: JSON.parse(x.edges)
+  	};
+  	
+  	console.log(networkData)
+  	
+  	for (var i=0; i < networkData.nodes.length; i++){
+  		graph.addNode(i,networkData.nodes[i]);
+  	}
+  	
+  	for (var i=0; i < networkData.links.length; i++){
+ 		link = networkData.links[i]; 		
+ 		graph.addLink(link.source,link.target)
+  	}
   	
   	var renderer = Viva.Graph.View.renderer(graph,{container:el});
   	
