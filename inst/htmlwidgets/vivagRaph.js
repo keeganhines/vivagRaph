@@ -16,7 +16,7 @@ HTMLWidgets.widget({
 	
 	graph.addLink(1,2);
 	
-	var renderer = Viva.Graph.View.renderer(graph);
+	var renderer = Viva.Graph.View.renderer(graph,{container:el});
 	
 	renderer.run();
 	
