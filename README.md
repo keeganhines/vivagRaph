@@ -12,4 +12,10 @@ Edges = data.frame(source=c(0,1,0,2),target=c(1,2,2,3))
 vivagRaph(nodes=Nodes,edges=Edges)
 ```
 
+**Installation**
+```
+devtools::install_github('keeganhines/vivagRaph')
+library(vivagRaph)
+```
+
 
