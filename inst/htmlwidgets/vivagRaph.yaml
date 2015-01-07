@@ -3,3 +3,8 @@ dependencies:
     version: 0.5.8
     src: htmlwidgets/lib/vivagraph
     script: vivagraph.js
+    
+  - name: jQuery
+    version: 1.11.2
+    src: htmlwidgets/lib/jquery
+    script: jquery-1.11.2.min.js

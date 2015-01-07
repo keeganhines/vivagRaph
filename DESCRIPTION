@@ -1,8 +1,14 @@
 Package: vivagRaph
-Title: What the package does (short line)
-Version: 0.1
-Authors@R: "First Last <first.last@example.com> [aut, cre]"
-Description: What the package does (paragraph)
+Title: Interactive newtork plots using VivaGraph javascript library.
+Version: 0.2.0
+Authors@R: c(
+	person("Kenton", "Russell", role='ctb'),
+	person("Keegan", "Hines", role=c('aut','cre'))
+)
+Maintainer: Keegan Hines <keegan.hines@gmail.com>
 Depends: R (>= 3.1.1)
-License: What license is it under?
+Imports:
+	htmlwidgets
+	jsonlite
+License: MIT
 LazyData: true
