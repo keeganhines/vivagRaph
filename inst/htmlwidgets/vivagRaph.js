@@ -22,12 +22,12 @@ HTMLWidgets.widget({
   	
   	
   	for (var i=0; i < networkData.nodes.nodeName.length; i++){
-  		graph.addNode(i,networkData.nodes[i]);
+  		graph.addNode(i,{nodeName = networkData.nodes.nodeName[i], group = networkData.nodes.group[i]});
   	}
   	
   	for (var i=0; i < networkData.links.source.length; i++){
- 		link = networkData.links[i]; 		
- 		graph.addLink(link.source,link.target)
+ 	//	link = networkData.links[i]; 		
+ 		graph.addLink(networkData.links.source[i],networkData.links.target[i])
   	}
   	
   	var graphics=Viva.Graph.View.svgGraphics(), nodeSize=24;
