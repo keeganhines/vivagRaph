@@ -22,7 +22,7 @@ HTMLWidgets.widget({
   	
   	
   	for (var i=0; i < networkData.nodes.nodeName.length; i++){
-  		graph.addNode(i,{nodeName = networkData.nodes.nodeName[i], group = networkData.nodes.group[i]});
+  		graph.addNode(i,{nodeName : networkData.nodes.nodeName[i], group : networkData.nodes.group[i]});
   	}
   	
   	for (var i=0; i < networkData.links.source.length; i++){
