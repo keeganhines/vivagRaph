@@ -21,11 +21,11 @@ HTMLWidgets.widget({
   	
   	
   	
-  	for (var i=0; i < networkData.nodes.length; i++){
+  	for (var i=0; i < networkData.nodes.nodeName.length; i++){
   		graph.addNode(i,networkData.nodes[i]);
   	}
   	
-  	for (var i=0; i < networkData.links.length; i++){
+  	for (var i=0; i < networkData.links.source.length; i++){
  		link = networkData.links[i]; 		
  		graph.addLink(link.source,link.target)
   	}
