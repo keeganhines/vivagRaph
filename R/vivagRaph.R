@@ -21,8 +21,8 @@ vivagRaph <- function(nodes,edges,options=NULL, width = NULL, height = NULL) {
 
   # forward options using x
   x = list(
-    nodes=jsonlite::toJSON(nodes),
-    edges=jsonlite::toJSON(edges)
+    nodes=nodes,
+    edges=edges
   )
 
   # create widget
