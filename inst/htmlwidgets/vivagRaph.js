@@ -15,8 +15,8 @@ HTMLWidgets.widget({
   	var graph= Viva.Graph.graph();
   	
   	var networkData={
-  		nodes: JSON.parse(x.nodes),
-  		links: JSON.parse(x.edges)
+  		nodes: x.nodes,
+  		links: x.edges
   	};
   	
   	
